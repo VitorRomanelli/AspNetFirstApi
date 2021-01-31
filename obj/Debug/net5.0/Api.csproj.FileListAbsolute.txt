@@ -37,3 +37,6 @@
 /home/vitor/Documentos/Programação/C#/Api/obj/Debug/net5.0/Api.genruntimeconfig.cache
 /home/vitor/Documentos/Programação/C#/Api/bin/Debug/net5.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/vitor/Documentos/Programação/C#/Api/bin/Debug/net5.0/Microsoft.Bcl.HashCode.dll
+/home/vitor/Documentos/Programação/C#/Api/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/vitor/Documentos/Programação/C#/Api/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/vitor/Documentos/Programação/C#/Api/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll

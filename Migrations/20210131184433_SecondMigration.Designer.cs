@@ -3,14 +3,16 @@ using System;
 using Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210131184433_SecondMigration")]
+    partial class SecondMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,8 +28,7 @@ namespace Api.Migrations
                     b.Property<Guid?>("MovieId")
                         .HasColumnType("char(36)");
 
-                    b.Property<string>("Url")
-                        .IsRequired()
+                    b.Property<string>("path")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
@@ -48,8 +49,8 @@ namespace Api.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Description")
-                        .HasColumnType("varchar(500) CHARACTER SET utf8mb4")
-                        .HasMaxLength(500);
+                        .HasColumnType("varchar(160) CHARACTER SET utf8mb4")
+                        .HasMaxLength(160);
 
                     b.Property<string>("Gender")
                         .IsRequired()
@@ -68,7 +69,7 @@ namespace Api.Migrations
             modelBuilder.Entity("Api.Models.Image", b =>
                 {
                     b.HasOne("Api.Models.Movie", null)
-                        .WithMany("Images")
+                        .WithMany("imgs")
                         .HasForeignKey("MovieId");
                 });
 #pragma warning restore 612, 618

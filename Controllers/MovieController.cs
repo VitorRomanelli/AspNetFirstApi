@@ -24,7 +24,7 @@ namespace Api.Controllers
         [Route("")]
         public async Task<ActionResult> GetMovies()
         {
-            var filmes = await _context.movies.ToListAsync();
+            var filmes = await _context.movies.Include(x => x.Images).ToListAsync();
             return Ok(filmes);
         }
 
@@ -32,6 +32,7 @@ namespace Api.Controllers
         [Route("")]
         public async Task<ActionResult> addMovie([FromBody]Movie movie)
         {    
+            Console.WriteLine("Entrei aqui");
             try{
                 var exists = _context.movies.Where(x => x.Title.ToLower() == movie.Title.ToLower()).FirstOrDefault();
                 if(exists != null){
