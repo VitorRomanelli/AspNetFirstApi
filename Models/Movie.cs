@@ -20,7 +20,7 @@ namespace Api.Models
         public string Title { get; set; }
         
         [MinLength(20, ErrorMessage="The movie description needs a minimum with 20 character.")]
-        [MaxLength(500, ErrorMessage="The movie description needs a maximum with 500 characters.")]
+        [MaxLength(1200, ErrorMessage="The movie description needs a maximum with 1200 characters.")]
         public string Description { get; set; }
         
         [Required(ErrorMessage="Classification required.")]

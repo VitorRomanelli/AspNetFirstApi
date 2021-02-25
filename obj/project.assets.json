@@ -1171,17 +1171,21 @@
     ]
   },
   "packageFolders": {
-    "/home/vitor/.nuget/packages/": {}
+    "/home/vitor/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/vitor/Documentos/Programação/C#/Api/Api.csproj",
+      "projectUniqueName": "/home/vitor/Development/Programacao/C#/Api/Api.csproj",
       "projectName": "Api",
-      "projectPath": "/home/vitor/Documentos/Programação/C#/Api/Api.csproj",
+      "projectPath": "/home/vitor/Development/Programacao/C#/Api/Api.csproj",
       "packagesPath": "/home/vitor/.nuget/packages/",
-      "outputPath": "/home/vitor/Documentos/Programação/C#/Api/obj/",
+      "outputPath": "/home/vitor/Development/Programacao/C#/Api/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "/home/vitor/.nuget/NuGet/NuGet.Config"
       ],
@@ -1252,7 +1256,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }
